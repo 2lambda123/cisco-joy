@@ -239,7 +239,7 @@ libjoy_la_OBJECTS = $(am_libjoy_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
-am__v_lt_1 = 
+am__v_lt_1 =
 libjoy_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(libjoy_la_CFLAGS) \
 	$(CFLAGS) $(libjoy_la_LDFLAGS) $(LDFLAGS) -o $@
@@ -250,11 +250,11 @@ am__v_P_1 = :
 AM_V_GEN = $(am__v_GEN_@AM_V@)
 am__v_GEN_ = $(am__v_GEN_@AM_DEFAULT_V@)
 am__v_GEN_0 = @echo "  GEN     " $@;
-am__v_GEN_1 = 
+am__v_GEN_1 =
 AM_V_at = $(am__v_at_@AM_V@)
 am__v_at_ = $(am__v_at_@AM_DEFAULT_V@)
 am__v_at_0 = @
-am__v_at_1 = 
+am__v_at_1 =
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/config/depcomp
 am__depfiles_maybe = depfiles
@@ -268,7 +268,7 @@ LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CC = $(am__v_CC_@AM_V@)
 am__v_CC_ = $(am__v_CC_@AM_DEFAULT_V@)
 am__v_CC_0 = @echo "  CC      " $@;
-am__v_CC_1 = 
+am__v_CC_1 =
 CCLD = $(CC)
 LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
@@ -276,7 +276,7 @@ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
-am__v_CCLD_1 = 
+am__v_CCLD_1 =
 SOURCES = $(libjoy_la_SOURCES)
 DIST_SOURCES = $(am__libjoy_la_SOURCES_DIST)
 am__can_run_installinfo = \
@@ -513,7 +513,7 @@ lib_LTLIBRARIES = libjoy.la
 @BUILD_WITH_SAFEC_FALSE@		../src/include/utils.h \
 @BUILD_WITH_SAFEC_FALSE@		../src/include/fp.h \
 @BUILD_WITH_SAFEC_FALSE@		../src/include/extractor.h \
-@BUILD_WITH_SAFEC_FALSE@		../src/include/wht.h 
+@BUILD_WITH_SAFEC_FALSE@		../src/include/wht.h
 
 @BUILD_WITH_SAFEC_TRUE@libjoy_la_SOURCES = \
 @BUILD_WITH_SAFEC_TRUE@	../src/joy_api.c \
@@ -592,7 +592,7 @@ lib_LTLIBRARIES = libjoy.la
 @BUILD_WITH_SAFEC_TRUE@		../src/include/utils.h \
 @BUILD_WITH_SAFEC_TRUE@		../src/include/fp.h \
 @BUILD_WITH_SAFEC_TRUE@		../src/include/extractor.h \
-@BUILD_WITH_SAFEC_TRUE@		../src/include/wht.h 
+@BUILD_WITH_SAFEC_TRUE@		../src/include/wht.h
 
 libjoy_la_CFLAGS = -I ../src/include -I $(SSL_CFLAGS) $(AM_CFLAGS) -I $(SAFEC_DIR)/include -I $(SAFEC_DIR)/include/safec
 library_includedir = $(includedir)/joy
@@ -638,11 +638,11 @@ library_include_HEADERS = \
 		../src/include/utils.h \
 		../src/include/fp.h \
 		../src/include/extractor.h \
-		../src/include/wht.h 
+		../src/include/wht.h
 
 @BUILD_WITH_SAFEC_FALSE@libjoy_la_LIBADD = $(SSL_LDFLAGS) -lcrypto
 @BUILD_WITH_SAFEC_TRUE@libjoy_la_LIBADD = -L$(SAFEC_DIR)/lib -lciscosafec
-libjoy_la_LDFLAGS = -version-info $(JOY_LIBRARY_VERSION) $(SSL_LDFLAGS) -lcrypto 
+libjoy_la_LDFLAGS = -version-info $(JOY_LIBRARY_VERSION) $(SSL_LDFLAGS) -lcrypto
 all: all-am
 
 .SUFFIXES:
@@ -801,7 +801,7 @@ clean-libLTLIBRARIES:
 	../safe_c_stub/src/$(am__dirstamp) \
 	../safe_c_stub/src/$(DEPDIR)/$(am__dirstamp)
 
-libjoy.la: $(libjoy_la_OBJECTS) $(libjoy_la_DEPENDENCIES) $(EXTRA_libjoy_la_DEPENDENCIES) 
+libjoy.la: $(libjoy_la_OBJECTS) $(libjoy_la_DEPENDENCIES) $(EXTRA_libjoy_la_DEPENDENCIES)
 	$(AM_V_CCLD)$(libjoy_la_LINK) -rpath $(libdir) $(libjoy_la_OBJECTS) $(libjoy_la_LIBADD) $(LIBS)
 
 mostlyclean-compile:
